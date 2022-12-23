@@ -1,0 +1,35 @@
+.manue {
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1.5px solid var(--theme);
+}
+
+.manu_icon {
+  margin: 0 auto;
+}
+.manu_icon li {
+  padding: 3vh;
+}
+
+.icon {
+  font-size: 24px;
+  color: var(--theme);
+}
+.active .icon {
+  color: var(--active);
+}
+
+.logo {
+  width: 44px;
+  margin: 3vh auto;
+}
+
+.a {
+  position: relative;
+  position: absolute;
+  font-weight: 400;
+  right: 0;
+}
