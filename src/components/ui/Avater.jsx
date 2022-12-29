@@ -8,7 +8,7 @@ const Div = styled.div`
     position: absolute;
     top: 0;
     right: ${(props) =>
-      (props.notifi > 100 && "-15px") || (props.notifi < 100 && "-10px")};
+      (props.notifi >= 99 && "-15px") || (props.notifi < 100 && "-10px")};
     background: var(--active);
     padding: 0.2vh 0.9vh;
     border-radius: 20px;
@@ -20,7 +20,12 @@ const Div = styled.div`
     border: 1px solid var(--active);
     border-radius: 50%;
     width: 54px;
+    hight: 54px;
     width: ${(props) =>
+      (props.size === "lg" && "64px") ||
+      (props.size === "md" && "54") ||
+      (props.size === "sm" && "44px")};
+    hight: ${(props) =>
       (props.size === "lg" && "64px") ||
       (props.size === "md" && "54") ||
       (props.size === "sm" && "44px")};

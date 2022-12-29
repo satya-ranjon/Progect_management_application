@@ -3,8 +3,7 @@ import { images } from "../../constants";
 import { NavLink } from "react-router-dom";
 import { FaTasks } from "react-icons/fa";
 import { RiTimer2Line } from "react-icons/ri";
-import { BsCalendar4 } from "react-icons/bs";
-import { HiOutlineDocument } from "react-icons/hi";
+import { HiOutlineDocument, HiOutlineCalendar } from "react-icons/hi";
 import Avater from "../ui/Avater";
 
 const ManuBar = () => {
@@ -18,33 +17,33 @@ const ManuBar = () => {
           <NavLink
             to="activate"
             className={({ isActive }) => (isActive ? style.active : undefined)}>
-            <RiTimer2Line className={style.icon} />
+            <RiTimer2Line className={`${style.icon1} ${style.icon}`} />
           </NavLink>
         </li>
         <li>
           <NavLink
             to="calander"
             className={({ isActive }) => (isActive ? style.active : undefined)}>
-            <BsCalendar4 className={style.icon} />
+            <HiOutlineCalendar className={`${style.icon2} ${style.icon}`} />
           </NavLink>
         </li>
         <li>
           <NavLink
             to="tasks"
             className={({ isActive }) => (isActive ? style.active : undefined)}>
-            <FaTasks className={style.icon} />
+            <FaTasks className={`${style.icon3} ${style.icon}`} />
           </NavLink>
         </li>
         <li>
           <NavLink
             to="document"
             className={({ isActive }) => (isActive ? style.active : undefined)}>
-            <HiOutlineDocument className={style.icon} />
+            <HiOutlineDocument className={`${style.icon4} ${style.icon}`} />
           </NavLink>
         </li>
       </div>
       <Avater
-        src="https://freepngimg.com/thumb/man/22654-6-man.png"
+        // src="https://freepngimg.com/thumb/man/22654-6-man.png"
         size="lg"
         notifi={10}
       />

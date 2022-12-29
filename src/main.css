@@ -1,6 +1,8 @@
 :root {
-  --theme: #bdbdbd;
-  --active: #fd967f;
+  --theme_one: #212121;
+  --background_nav: #1f2532;
+  --theme_two: #71706f;
+  --active: #00dc81;
 }
 
 *,

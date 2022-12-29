@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1.5px solid var(--theme);
+  border-right: 1.5px solid var(--theme_two);
+  /* background-color: var(--background_nav); */
 }
 
 .manu_icon {
@@ -14,16 +15,24 @@
   padding: 3vh;
 }
 
-.icon {
-  font-size: 24px;
-  color: var(--theme);
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  font-size: 29px;
+  color: var(--theme_two);
 }
+.icon3 {
+  font-size: 24px;
+}
+
 .active .icon {
   color: var(--active);
 }
 
 .logo {
   width: 44px;
+  height: 44px;
   margin: 3vh auto;
 }
 
